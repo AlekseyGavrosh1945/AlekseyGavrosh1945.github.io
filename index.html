@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexey Gavrosh | Software Engineer</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --dark: #3d4451; --accent: #3a4a5e; --muted: #7a8290; }
+  * { font-family: 'Montserrat', Arial, sans-serif; }
+  html { scroll-behavior: smooth; }
+  body { color: #3f4550; }
+  section { padding: 70px 0; }
+  .section-title { font-weight: 700; color: var(--accent); margin-bottom: 40px; position: relative; display: inline-block; }
+  .section-title::after { content: ''; display: block; width: 60px; height: 3px; background: var(--dark); margin-top: 8px; }
+  #home { background: var(--dark); color: #e8eaed; padding: 110px 0 90px; }
+  #home .photo { width: 170px; height: 170px; border-radius: 50%; object-fit: cover; border: 4px solid #596273; }
+  #home h1 { font-weight: 700; }
+  #home .position { color: #b8c2d0; }
+  .btn-cv { background: #fff; color: var(--dark); font-weight: 600; }
+  .btn-cv:hover { background: #dfe3e9; color: var(--dark); }
+  .btn-outline-cv { border: 1.5px solid #aab3c0; color: #e8eaed; font-weight: 600; }
+  .btn-outline-cv:hover { background: #aab3c0; color: var(--dark); }
+  .contact-icon { color: #b8c2d0; text-decoration: none; margin: 0 10px; font-size: 1.25rem; }
+  .contact-icon:hover { color: #fff; }
+  .navbar { background: var(--dark); }
+  .navbar .nav-link { color: #cfd5de; }
+  .navbar .nav-link:hover, .navbar .nav-link.active { color: #fff; }
+  .timeline { border-left: 2px solid #c9cdd4; padding-left: 25px; }
+  .job { position: relative; margin-bottom: 35px; }
+  .job::before { content: ''; position: absolute; left: -32px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2.5px solid var(--accent); }
+  .job .period { color: var(--muted); font-size: 0.9rem; }
+  .job .company { color: #6d7684; }
+  .job h5 { font-weight: 700; color: var(--accent); }
+  .skill-group { margin-bottom: 14px; }
+  .skill-group .sg-t { font-weight: 600; color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+  .badge-skill { background: #e9ecf0; color: #4c525e; font-weight: 500; margin: 2px; }
+  .project-card { border: 1px solid #dfe3e8; border-radius: 8px; padding: 22px; height: 100%; }
+  .project-card h6 { font-weight: 700; color: var(--accent); }
+  .project-card .p-role { color: var(--muted); font-size: 0.85rem; }
+  .project-card p { font-size: 0.9rem; color: #5a6270; }
+  footer { background: var(--dark); color: #b8c2d0; padding: 28px 0; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Alexey Gavrosh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="text-center">
+  <div class="container">
+    <img class="photo mb-4" src="cv_photo.png" alt="Alexey Gavrosh">
+    <h1>Alexey Gavrosh</h1>
+    <div class="position fs-4 mb-4">Software Engineer — PHP / Laravel / Vue / Nuxt</div>
+    <div class="mb-4">
+      <a class="btn btn-cv me-2 mb-2" href="Alexey_Gavrosh_CV_EN.pdf" download><i class="fas fa-download"></i> Download CV (EN)</a>
+      <a class="btn btn-outline-cv mb-2" href="Гаврош_Алексей_CV_RU.pdf" download><i class="fas fa-download"></i> Скачать CV (RU)</a>
+    </div>
+    <div>
+      <a class="contact-icon" href="mailto:ganibal1953@mail.ru" title="Email"><i class="fas fa-envelope"></i></a>
+      <a class="contact-icon" href="https://t.me/AlexeyGavrosh" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+      <a class="contact-icon" href="https://www.linkedin.com/in/alexey-gavrosh-799236135" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a class="contact-icon" href="tel:+375296934129" title="Phone"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About me</h2>
+    <p class="lead">
+      Seasoned software engineer specialized in backend-heavy platforms for e-commerce, payment
+      processing and content systems. 7+ years of owning the full delivery cycle — architecture
+      and technical design, API development, event-driven pipelines, search, payment and
+      logistics integrations — through to production operation. Combines deep engineering
+      expertise with team practices: technical interviews, onboarding and mentoring.
+    </p>
+    <p class="text-muted">Minsk, Belarus · open to full-time on-site / remote positions</p>
+  </div>
+</section>
+
+<section id="skills" class="bg-light">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="skill-group"><div class="sg-t">Backend</div>
+          <span class="badge badge-skill">PHP</span><span class="badge badge-skill">Laravel</span><span class="badge badge-skill">Symfony</span><span class="badge badge-skill">Drupal</span><span class="badge badge-skill">PHPUnit</span></div>
+        <div class="skill-group"><div class="sg-t">Frontend</div>
+          <span class="badge badge-skill">JavaScript</span><span class="badge badge-skill">Vue.js</span><span class="badge badge-skill">Nuxt (SSR)</span><span class="badge badge-skill">jQuery</span><span class="badge badge-skill">Bootstrap</span></div>
+        <div class="skill-group"><div class="sg-t">Data &amp; messaging</div>
+          <span class="badge badge-skill">MySQL</span><span class="badge badge-skill">PostgreSQL</span><span class="badge badge-skill">ClickHouse</span><span class="badge badge-skill">Redis</span><span class="badge badge-skill">MeiliSearch</span><span class="badge badge-skill">Apache Kafka</span></div>
+      </div>
+      <div class="col-md-6">
+        <div class="skill-group"><div class="sg-t">Architecture &amp; APIs</div>
+          <span class="badge badge-skill">REST / SOAP</span><span class="badge badge-skill">OpenAPI (Swagger)</span><span class="badge badge-skill">Microservices</span><span class="badge badge-skill">WebSockets</span><span class="badge badge-skill">Queues</span></div>
+        <div class="skill-group"><div class="sg-t">Integrations</div>
+          <span class="badge badge-skill">Mollie</span><span class="badge badge-skill">PayPal</span><span class="badge badge-skill">Bank APIs</span><span class="badge badge-skill">SendCloud</span><span class="badge badge-skill">Cloudflare API</span><span class="badge badge-skill">1C (XML/CML/YML)</span></div>
+        <div class="skill-group"><div class="sg-t">DevOps &amp; tooling</div>
+          <span class="badge badge-skill">Docker</span><span class="badge badge-skill">CI/CD</span><span class="badge badge-skill">Argo CD</span><span class="badge badge-skill">Nginx</span><span class="badge badge-skill">Linux</span><span class="badge badge-skill">Git</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="container">
+    <h2 class="section-title">Resume</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="period">09.2024 — 08.2026</div>
+        <div class="company">Maxbitsolution · maxbitsolution.com</div>
+        <h5>PHP Developer</h5>
+        <p>High-load backend systems for payment processing, iGaming content delivery and infrastructure management. Service APIs (REST/SOAP), event-driven pipelines (Kafka, OpenSearch), CI/CD (Argo CD), microservice architecture, AI/ML integration. Technical interviews and onboarding of engineers.</p>
+      </div>
+      <div class="job">
+        <div class="period">12.2020 — 09.2024</div>
+        <div class="company">Ontid · ontid.com</div>
+        <h5>Fullstack Developer</h5>
+        <p>Full lifecycle of the company's e-commerce platform family — core backend, customer portal, Nuxt.js storefront. Architectural solutions for distributed applications. Integrations: Mollie, PayPal, SendCloud, MeiliSearch, WebSockets; document flow automation; 1C / SFTP data exchange.</p>
+      </div>
+      <div class="job">
+        <div class="period">11.2018 — 11.2020</div>
+        <div class="company">7745.by</div>
+        <h5>Web Developer (Drupal / PHP / JS / Laravel)</h5>
+        <p>One of the largest Belarusian online retailers: e-commerce platform with 20+ warehouses. Search logic and business rules engine, electronic document flow, 1C ERP, bank payment and credit systems, logistics, marketplace API/SOAP integrations.</p>
+      </div>
+    </div>
+    <a class="btn btn-dark mt-2" href="Alexey_Gavrosh_CV_EN.pdf" download><i class="fas fa-download"></i> Download full CV (EN)</a>
+    <a class="btn btn-outline-dark mt-2" href="Гаврош_Алексей_CV_RU.pdf" download><i class="fas fa-download"></i> Скачать CV (RU)</a>
+  </div>
+</section>
+
+<section id="projects" class="bg-light">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Casino CMS &amp; Middleware</h6>
+          <div class="p-role">PHP Developer · 09.2024 – 08.2026</div>
+          <p>Content management system and middleware for an iGaming platform: bonuses, banners, event catalogs, geo-distribution, multi-currency content delivery.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL · Redis · Swagger · Docker</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Payment Matching &amp; Transaction Control</h6>
+          <div class="p-role">PHP Developer · 09.2024 – 08.2026</div>
+          <p>Back-office payment platform: deposit/cashout matching, balances, bank administration, check verdicts and statistics, auto-split rules.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL · Redis · Sharp · OpenAPI</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>MRS — Domains &amp; Infrastructure</h6>
+          <div class="p-role">PHP Developer · 09.2024 – 08.2026</div>
+          <p>Internal platform automating domains, redirectors, geo-routing and SSL certificates via Cloudflare, OVH and Dynadot APIs.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL · Redis · Cloudflare/OVH/Dynadot API</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Creoserver — E-commerce Backend</h6>
+          <div class="p-role">Fullstack Developer · 04.2021 – 09.2024</div>
+          <p>Core backend of an international e-commerce platform: catalog, orders, document flow, payments (Mollie, PayPal), EU VAT, SendCloud logistics, MeiliSearch search.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL · MeiliSearch · Mollie · PayPal · SendCloud</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Creoserver Customer Portal</h6>
+          <div class="p-role">Fullstack Developer · 12.2020 – 09.2024</div>
+          <p>Customer portal: product catalog with attributes, shopping cart, payment and delivery presets, personal account.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL · REST API</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Webshop — Nuxt.js Storefront</h6>
+          <div class="p-role">Fullstack Developer · 10.2021 – 09.2024</div>
+          <p>Multilingual e-commerce storefront: SSR, realtime updates, SEO infrastructure, analytics.</p>
+          <p class="text-muted mb-0">Node.js · Nuxt (Vue.js) · Element UI · Laravel Echo · i18n</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>7745.by — Multi-warehouse Marketplace</h6>
+          <div class="p-role">Web Developer · 11.2018 – 11.2020</div>
+          <p>One of the largest Belarusian online retailers: 20+ warehouses, unified catalog, electronic document flow, 1C ERP, bank payments, logistics.</p>
+          <p class="text-muted mb-0">PHP · Drupal · Laravel · jQuery · MySQL · 1C · SOAP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="container">
+    <div class="mb-2">
+      <a class="contact-icon" href="mailto:ganibal1953@mail.ru"><i class="fas fa-envelope"></i></a>
+      <a class="contact-icon" href="https://t.me/AlexeyGavrosh" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a class="contact-icon" href="https://www.linkedin.com/in/alexey-gavrosh-799236135" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    © 2026 Alexey Gavrosh
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
