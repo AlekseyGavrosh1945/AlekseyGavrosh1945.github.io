@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alexey Gavrosh | Software Engineer</title>
+<title>Alexey Gavrosh | Senior PHP Developer</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +41,7 @@
   .project-card { border: 1px solid #dfe3e8; border-radius: 8px; padding: 22px; height: 100%; }
   .project-card h6 { font-weight: 700; color: var(--accent); }
   .project-card .p-role { color: var(--muted); font-size: 0.85rem; }
+  .project-card .p-role a { color: var(--accent); word-break: break-all; }
   .project-card p { font-size: 0.9rem; color: #5a6270; }
   footer { background: var(--dark); color: #b8c2d0; padding: 28px 0; font-size: 0.9rem; }
 </style>
@@ -58,6 +59,7 @@
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#opensource">Open Source</a></li>
       </ul>
     </div>
   </div>
@@ -67,7 +69,7 @@
   <div class="container">
     <img class="photo mb-4" src="cv_photo.png" alt="Alexey Gavrosh">
     <h1>Alexey Gavrosh</h1>
-    <div class="position fs-4 mb-4">Software Engineer — PHP / Laravel / Vue / Nuxt</div>
+    <div class="position fs-4 mb-4">Senior PHP Developer — PHP / Laravel / Symfony</div>
     <div class="mb-4">
       <a class="btn btn-cv me-2 mb-2" href="Alexey_Gavrosh_CV_EN.pdf" download><i class="fas fa-download"></i> Download CV (EN)</a>
       <a class="btn btn-outline-cv mb-2" href="Alexey_Gavrosh_CV_RU.pdf" download><i class="fas fa-download"></i> Скачать CV (RU)</a>
@@ -85,10 +87,10 @@
   <div class="container">
     <h2 class="section-title">About me</h2>
     <p class="lead">
-      Seasoned software engineer specialized in backend-heavy platforms for e-commerce, payment
+      Senior PHP Developer specialized in backend-heavy platforms for e-commerce, payment
       processing and content systems. 7+ years of owning the full delivery cycle — architecture
-      and technical design, API development, event-driven pipelines, search, payment and
-      logistics integrations — through to production operation. Combines deep engineering
+      and technical design, API development (Laravel, Symfony), event-driven pipelines, search,
+      payment and logistics integrations — through to production operation. Combines deep engineering
       expertise with team practices: technical interviews, onboarding and mentoring.
     </p>
     <p class="text-muted">Minsk, Belarus · open to full-time on-site / remote positions</p>
@@ -126,7 +128,7 @@
       <div class="job">
         <div class="period">09.2024 — 08.2026</div>
         <div class="company">Maxbitsolution · maxbitsolution.com</div>
-        <h5>PHP Developer</h5>
+        <h5>Senior PHP Developer</h5>
         <p>High-load backend systems for payment processing, iGaming content delivery and infrastructure management. Service APIs (REST/SOAP), event-driven pipelines (Kafka, OpenSearch), CI/CD (Argo CD), microservice architecture, AI/ML integration. Technical interviews and onboarding of engineers.</p>
       </div>
       <div class="job">
@@ -205,6 +207,46 @@
           <div class="p-role">Web Developer · 11.2018 – 11.2020</div>
           <p>One of the largest Belarusian online retailers: 20+ warehouses, unified catalog, electronic document flow, 1C ERP, bank payments, logistics.</p>
           <p class="text-muted mb-0">PHP · Drupal · Laravel · jQuery · MySQL · 1C · SOAP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="opensource">
+  <div class="container">
+    <h2 class="section-title">Open Source</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Task Manager — Symfony 7</h6>
+          <div class="p-role"><a href="https://github.com/AlekseyGavrosh1945/symfony-task-manager" target="_blank">github.com/AlekseyGavrosh1945/symfony-task-manager</a></div>
+          <p>Task manager on Symfony 7.4 LTS: Doctrine ORM (migrations, fixtures), form login + token-authenticated JSON API, domain events, console commands. Runs in Docker (nginx + php-fpm + PostgreSQL).</p>
+          <p class="text-muted mb-0">PHP · Symfony 7 · Doctrine · PostgreSQL · Docker</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Ymaps Org Reviews</h6>
+          <div class="p-role"><a href="https://github.com/AlekseyGavrosh1945/ymaps-org-reviews" target="_blank">github.com/AlekseyGavrosh1945/ymaps-org-reviews</a></div>
+          <p>Collecting and analyzing Yandex Maps organization reviews: parser with saved state views, queue-based processing.</p>
+          <p class="text-muted mb-0">PHP · Laravel · Vue 3 · Queues</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Creoserver — E-commerce Backend</h6>
+          <div class="p-role"><a href="https://github.com/AlekseyGavrosh1945/creoserver-portfolio" target="_blank">github.com/AlekseyGavrosh1945/creoserver-portfolio</a></div>
+          <p>Open snapshot of a production e-commerce backend: orders, document flow, payments, logistics.</p>
+          <p class="text-muted mb-0">PHP · Laravel · MySQL</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="project-card">
+          <h6>Creoserver Customer Portal</h6>
+          <div class="p-role"><a href="https://github.com/AlekseyGavrosh1945/creoserver-portal" target="_blank">github.com/AlekseyGavrosh1945/creoserver-portal</a></div>
+          <p>Vue SPA customer portal with a Laravel API: product catalog, shopping cart, personal account.</p>
+          <p class="text-muted mb-0">PHP · Laravel · Vue</p>
         </div>
       </div>
     </div>
